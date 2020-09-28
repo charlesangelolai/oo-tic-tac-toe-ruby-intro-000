@@ -40,14 +40,4 @@ class TicTacToe
   def valid_move?(index)
     
   end
-
-  def turn_count
-    var count = 0
-
-    @board.each do |i|
-      if @board[i] != " "
-        count += 1
-      end
-    end
-  end
 end
