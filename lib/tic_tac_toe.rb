@@ -46,7 +46,7 @@ class TicTacToe
 
   def turn_count
     var count = 0
-    
+
     for i in @board
       if @board[i] != " "
         count += 1
