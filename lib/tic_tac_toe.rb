@@ -33,8 +33,9 @@ class TicTacToe
   def position_taken?(index)
     if @board[index] == " "
       return true
+    else
+      return false
     end
-    return false
   end
 
   def valid_move?(index)
