@@ -39,7 +39,9 @@ class TicTacToe
 
   def valid_move?(index)
     if !position_taken?(index)
-      return true
+      if index > 0 && index < 10
+        return true
+      end
     end
     return false
   end
