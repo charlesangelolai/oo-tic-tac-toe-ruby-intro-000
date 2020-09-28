@@ -38,7 +38,7 @@ class TicTacToe
   end
 
   def valid_move?(index)
-    !position_taken?(index) ? return true : return false
+    !position_taken?(index) ? true : false
   end
 
   def turn_count
