@@ -31,14 +31,14 @@ class TicTacToe
   end
 
   def position_taken?(index)
-    if @board[index] != " "
+    if @board[input_to_index(index)] != " "
       return true
     end
     return false
   end
 
   def valid_move?(index)
-    if index > 0 && index < 10 && !position_taken(index - 1)
+    if index > 0 && index < 10 && !position_taken(index)
       return true
     end
     return false
